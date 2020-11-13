@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year in posts_by_year %}
+    <h1 class="posts-year">{{ year.name }}</h1>
+    <ul class="post-list">
+      {% for post in year.items %}
+        <li>
+          <span class="post-meta">
+            {{ post.date | date: "%b %d" }}
+          </span>
+          <a class="post-meta-title" href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

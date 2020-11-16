@@ -100,6 +100,10 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
+blockquote strong {
+  color: #c8c8c8;
+}
+
 @media (min-width: 30em) {
   blockquote {
     padding-right: 5rem;
@@ -183,12 +187,27 @@ img {
   border-radius: 5px;
 }
 
-.container {
+.content {
   max-width: 36rem;
-  padding: 1rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: #242424;
+  padding: 1rem 2rem;
+}
+
+.spyable-content {
+  width: 65%;
+  margin: 0 10%;
+  margin-left: 10%;
+  margin-right: 2.5%;
+  padding: 0 2.5%;
+}
+
+@media(max-width: 1024px) {
+  .spyable-content {
+    min-width: 80%;
+    margin: auto;
+    padding: 15px;
+  }
 }
 
 .post-header {
@@ -244,4 +263,50 @@ img {
 
 .highlight {
   margin: 0;
+}
+
+.scroll-nav {
+  position: fixed;
+  right: 0;
+  width: 20%;
+  font-size: 85%;
+  padding: 15px;
+}
+
+@media(max-width: 1024px) {
+  .scroll-nav {
+    display: none;
+  }
+}
+
+.scroll-nav__list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.scroll-nav__item {
+  margin-bottom: 5px;
+}
+
+.scroll-nav__item--active > a {
+  padding: 10px;
+  font-weight: bold;
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+.scroll-nav__link {
+  text-decoration: none;
+  color: #b8b8b8;
+  border: 0;
+}
+
+.scroll-nav__link:hover {
+  border: 0;
+  color: #e8e8e8;
+}
+
+.scroll-nav__link:visited,
+.scroll-nav__link:focus {
+  border: 0;
 }

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: spyable
 ---
 
 <div class="post">
@@ -12,14 +12,12 @@ layout: default
   </div>
 </div>
 
-<!-- <script>
+<script>
   $(function(){
-    const content = document.querySelector('.post-content');
+    const content = document.querySelector('.spyable-content');
     scrollnav.init(content, { 
       debug: false,
-      easingStyle: 'linear',
-      sections: ($('.post-content > h1').length>0) ? 'h1' : 'h2',
-      subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3'
+      easingStyle: 'linear'
     });
   });
-</script> -->
+</script>

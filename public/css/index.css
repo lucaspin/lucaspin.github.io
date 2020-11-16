@@ -23,17 +23,15 @@ body {
 }
 
 nav {
-  max-width: 38rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-bottom: 0;
 }
 
 nav ul li {
@@ -44,6 +42,7 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   border: 0;
+  text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -200,15 +199,15 @@ img {
   margin: 0 10%;
   margin-left: 10%;
   margin-right: 2.5%;
-  padding: 0 2.5%;
+  padding: 15px 2.5%;
   background-color: #222222;
 }
 
 @media(max-width: 1024px) {
   .spyable-content {
-    min-width: 80%;
-    margin: auto;
-    padding: 15px;
+    min-width: 90%;
+    margin: 0;
+    padding: 5%;
   }
 }
 

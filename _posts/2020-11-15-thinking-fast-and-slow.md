@@ -9,7 +9,11 @@ categories: [Book, Psychology]
 
 We enjoy thinking of ourselves as highly rational beings, making perfect and well-balanced decisions based on nothing more than evidence and probability. Well, reading this book might show you how flawed that perception is, while offering a comprehensive insight into the shortcomings of our minds.
 
-Warning: [Daniel Kahneman](https://pt.wikipedia.org/wiki/Daniel_Kahneman) will attempt to trick you, constantly. And then he'll offer you an explanation of why you were just tricked. Thanks, I guess.
+Warning: [Daniel Kahneman](https://pt.wikipedia.org/wiki/Daniel_Kahneman) will attempt to trick you, constantly. And then he'll offer you an explanation of why you were just tricked.
+
+Thanks, I guess.
+
+## WYSIATI
 
 One recurring acronym you'll find through the whole book is **WYSIATI**. **W**hat **Y**ou **S**ee **I**s **A**ll **T**here **I**s. It is a concise way of saying that we form conclusions by only looking at the evidence we see at the moment, ignoring that we may have critical information missing, or even that the evidence we have is not trustworthy.
 
@@ -35,18 +39,15 @@ That happens because of **associative activation**: ideas that were evoked trigg
 
 ## Prospect Theory
 
-He defends his [Prospect Theory](https://en.wikipedia.org/wiki/Prospect_theory) as an improvement in [Expected Utility Hipothesis](https://en.wikipedia.org/wiki/Expected_utility_hypothesis), by taking into account a referential point; people's current and specific situation might influence their decisions.
+He defends his [Prospect Theory](https://en.wikipedia.org/wiki/Prospect_theory) as an improvement to [Expected Utility Hipothesis](https://en.wikipedia.org/wiki/Expected_utility_hypothesis), by taking into account a referential point; people's current and specific situation might influence their decisions.
 
-He extensively explains [loss aversion](https://en.wikipedia.org/wiki/Loss_aversion), and how when directly compared ou pondered, losses are taken as larger than gains.
+He extensively explains [loss aversion](https://en.wikipedia.org/wiki/Loss_aversion), and how when directly compared or pondered, losses are taken as larger than gains.
 
-**fourfold pattern**
-the weights attributed to results are not identical to the probability of these results.
+He also describes the [Fourfold Pattern](https://www.broyhillasset.com/2012/09/21/the-fourfold-pattern/) and explains how the weights attributed to results are not identical to the probability of these results. That conclusion ends up exposing two effects:
+- __Possibility Effect__: highly unlikely results receive higher weight than they deserve. The lottery ticket is the supreme example of the possibility effect.
+- __Certainty Effect__: Highly certain results receive less weight than they should. We tend to exaggerate the weight of little risks and pay a higher value than expected to eliminate it completely. That's the basic principle that makes insurance policies so lucrative.
 
-*0% -> 5%*
-Highly unlikely results receive a higher weight than they deserve. The lottery ticket is the supreme example of the possibility effect.
-
-*95% -> 100%*
-Highly certain results receive less weight than they should. We tend to exaggerate the weight of little risks and pay a higher value than expected to eliminate it completely. That's the basic principle that makes insurance policies so lucrative.
+I enjoyed how he acknowledges that his theory isn't perfect, as it doesn't take into account other important aspects of a decision, like regret.
 
 ## Regret and normality
 
@@ -61,22 +62,17 @@ The intense aversion to trading a risk for some other advantage is even a big pa
 
 ## Experiencing and remembering self
 
-experiencing self -> is it hurting now?
-remembering self -> how was it overall?
-
 We confuse our past experiences with the memory we have of them. What we learn from the past is how to maximize the quality of our future memories, not necessarily our futures experiences.
 
-*cold-hand-experiment: https://mindhacks.com/2013/05/28/why-you-might-prefer-more-pain/*
-
-Our memories are highly influenced by two rules:
+He describes a [cool experiment](https://mindhacks.com/2013/05/28/why-you-might-prefer-more-pain/) that exposes two characteristics of how we keep memories:
 - __peak-end rule__: the global retrospective classification is the mean of the worst moment of the experience and on its end.
 - __duration neglect__: the duration of an episode has no effect on its evaluation.
 
-There's an interesting inconsistency here: we want our pleasures to be sustained and our pains to be brief, but our memory evoluted to represent the most intense moment and the end of an pleasure/pain episode.
+There's an interesting inconsistency here: we want our pleasures to be sustained and our pains to be brief, but our memory evoluted to represent the most intense moment and the end of a pleasure/pain episode.
 
-Overall, he goes through the book building a catalog of different biases/heuristics, gives them a name and describe their "symptoms".
+## Conclusion
 
-Here are some of them:
+He goes through the book building a catalog of different biases/heuristics, gives them a name and describe their "symptoms". Here are some of them:
 - [Availability Heuristic](https://en.wikipedia.org/wiki/Availability_heuristic): We judge a specific topic by the first examples that comes to our mind, and by how easy they are retrieved from our memory. That way, we substitute the size of a category or the frequency of an event by the impression of how easy it is to recall some information about it, leading us to overestimate the frequency of events that capture our attention more easily. Also, personal experiences are more easily remembered than other people's experiences: couples usually overestimate their contributions to keep the house in order and think they did more than their partner.
 - [Anchoring Effect](https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)): it happens when we consider a particular value for an unknown quantity before estimating it; the result it our estimation will likely be near the considered value.
 - [Halo Effect](https://en.wikipedia.org/wiki/Halo_effect): the sequence in which we observe the characteristics of someone is very important to our final conclusion, where the first impressions have higher weights than the subsequent ones.
@@ -90,4 +86,4 @@ Here are some of them:
 - [Disposition Effect](https://en.wikipedia.org/wiki/Disposition_effect): we sell assets that have increased in value, while keeping assets that have dropped in value.
 - [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost): we keep investing on something (that may not be that good) as a result of a previous investment. That may explain why people remain on terrible jobs or marriages.
 
-I probably missed some of them, but these were the ones that most caught my attention.
+I probably missed some of them, but these were the ones that most caught my attention. The book can be quite repetitive at times, but it is certainly an interesting read.

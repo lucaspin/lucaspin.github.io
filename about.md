@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Howdy, my name is Lucas Augusto Pinheiro. I am aware that presenting yourself with your full name might be weird, but the appreciation for my second name comes and goes. Right now, it is quite present so I'm using it everywhere.
-
-Anyway, I am a software developer from Brazil:
+Howdy, my name is Lucas Augusto Pinheiro. I am a software developer from Brazil:
 - Currently working @ [Daitan](https://www.daitan.com/)
 - [https://github.com/lucaspin](https://github.com/lucaspin)
 - [https://twitter.com/lucaspinei](https://twitter.com/lucaspinei)

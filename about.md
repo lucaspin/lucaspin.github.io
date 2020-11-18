@@ -5,12 +5,10 @@ permalink: /about/
 ---
 
 Howdy, my name is Lucas Augusto Pinheiro. I am a software developer from Brazil:
-- Currently working @ [Daitan](https://www.daitan.com/)
+- Currently working at [Daitan](https://www.daitan.com/)
 - [https://github.com/lucaspin](https://github.com/lucaspin)
 - [https://twitter.com/lucaspinei](https://twitter.com/lucaspinei)
 
-I enjoy understanding the inner workings of the interesting things that compose this beautiful world of ours, but I find myself being lazy more often that I care to admit. In order to address both of these things, I realized that forcing myself to write is a great way to apply discipline and learn, while also consolidating knowledge. That is the purpose of this blog-like website.
+I enjoy understanding the inner workings of the interesting pieces that compose this beautiful world of ours and this is the place where I write about those discoveries.
 
-Aside from that, I like tea and saving albums on Spotify and never listening to them.
-
-You can reach out to me through the upper-mentioned channels or [through email](mailto:pinheiro.lucasaugusto@gmail.com).
+I also enjoy tea and saving albums on Spotify and never listening to them. You can reach out to me through the upper-mentioned channels or [through email](mailto:pinheiro.lucasaugusto@gmail.com).

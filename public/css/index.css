@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  color: #d2d8d8;
+  color: #E6E1DC;
   background-color: #181818;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -40,16 +40,13 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
   border: 0;
   text-transform: uppercase;
+  color: #E6E1DC;
 }
 
 nav ul li a:hover {
   border: 0;
-}
-
-nav ul li a:hover {
   text-decoration: none;
 }
 
@@ -58,14 +55,16 @@ a {
   border-bottom: 1px solid #fff;
   color: #fff;
   padding: 0 0.15rem;
+  transition: 0.1s all;
+}
+
+a:hover {
+  border-bottom: 0;
+  color: #FFC66D;
 }
 
 a strong {
   color: inherit;
-}
-
-a:hover, a:focus {
-  border-bottom: 1px solid #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -83,6 +82,7 @@ p {
 strong {
   color: #fff;
   font-weight: bolder;
+  padding: 0 0.15rem;
 }
 
 blockquote {
@@ -139,8 +139,8 @@ code, pre {
 code {
   padding: 0 .1rem;
   margin: 0 0.1rem;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #FFC66D;
+  border: 1px solid #FFC66D;
   border-radius: 3px;
 }
 
@@ -192,7 +192,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 1rem 2rem;
-  background-color: #222222;
+  background-color: #2B2B2B;
 }
 
 .spyable-content {
@@ -201,7 +201,7 @@ img {
   margin-left: 10%;
   margin-right: 2.5%;
   padding: 15px 2.5%;
-  background-color: #222222;
+  background-color: #2B2B2B;
 }
 
 @media(max-width: 1024px) {
@@ -287,9 +287,10 @@ img {
 }
 
 .scroll-nav__item--active > a {
-  padding: 10px;
+  padding: 5px;
   font-weight: bold;
-  color: #e8e8e8;
+  color: #FFC66D;
+  transition: 0.2s all;
   text-decoration: none;
 }
 
@@ -301,7 +302,7 @@ img {
 
 .scroll-nav__link:hover {
   border: 0;
-  color: #e8e8e8;
+  color: #FFC66D;
 }
 
 .scroll-nav__link:visited,

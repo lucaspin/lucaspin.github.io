@@ -31,22 +31,6 @@ html[data-theme="theme-4"] {
 }
 
 html[data-theme="theme-5"] {
-  --background-color: #B2675E;
-  --background-content-color: #644536;
-  --text-color: #EEF1BD;
-  --darker-text-color: #C4A381;
-  --highlight-color: #BBD686;
-}
-
-html[data-theme="theme-6"] {
-  --background-color: #5D536B;
-  --background-content-color: #272838;
-  --text-color: #EEF1BD;
-  --darker-text-color: #7D6B91;
-  --highlight-color: #347FC4;
-}
-
-html[data-theme="theme-7"] {
   --background-color: #2E5077;
   --background-content-color: #611C35;
   --text-color: #D7E8BA;
@@ -67,10 +51,10 @@ html[data-theme="theme-7"] {
 .theme-toggler:active,
 .theme-toggler:focus {
   color: var(--darker-text-color);
+  user-select: none;
   background-color: var(--background-color);
-  margin: 25px 0;
+  margin: 15px 0;
   padding: 10px 20px;
-  outline: 0;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -81,8 +65,8 @@ html[data-theme="theme-7"] {
 
 .theme-toggler-box {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 2px;
 }
 
@@ -94,7 +78,7 @@ html, body {
 
 html {
   font-family: "Crimson Pro", Helvetica, Arial, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -125,7 +109,13 @@ nav ul {
 }
 
 nav ul li {
-  padding: 1rem;
+  padding: 1.1rem 0.5rem;
+}
+
+@media (max-width: 38em) {
+  nav ul li {
+    padding: 1.25rem 0.5rem;
+  }
 }
 
 nav ul li a {
@@ -347,11 +337,13 @@ img {
 }
 
 .scroll-nav__item--active > a {
-  padding: 5px;
+  padding: 5px 10px;
   font-weight: bold;
-  color: var(--highlight-color);
+  background-color: var(--highlight-color);
+  color: var(--background-content-color);
   transition: 0.2s all;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 .scroll-nav__link {

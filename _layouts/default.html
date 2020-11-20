@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" data-theme="theme-1">
   {% include head.html %}
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <div class="theme-selector-container">
+        <div class="theme-toggler">
+          <div class="theme-toggler-box" style="background-color:var(--background-content-color)"></div>
+          <div class="theme-toggler-box" style="background-color:var(--text-color)"></div>
+          <div class="theme-toggler-box" style="background-color:var(--darker-text-color)"></div>
+          <div class="theme-toggler-box" style="background-color:var(--highlight-color)"></div>
+          <div class="theme-toggler-box" style="background-color:var(--background-color)"></div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <div class="content">
       {{ content }}
     </div>
-    <!-- <div class="spyable-content">
-      {{ content }}
-    </div> -->
   </body>
+  <script>
+    (function() {
+      const theme = window.localStorage.getItem("theme");
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', 'theme-' + theme);
+      }
+
+      $('.theme-toggler').on('click', function() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const currentNumber = Number(currentTheme.split("-")[1]);
+        let nextTheme;
+        if (currentNumber == 7) {
+          nextTheme = 1;
+        } else {
+          nextTheme = currentNumber + 1;
+        }
+
+        window.localStorage.setItem('theme', nextTheme);
+        document.documentElement.setAttribute('data-theme', 'theme-' + nextTheme);
+      });
+    })();
+  </script>
 </html>

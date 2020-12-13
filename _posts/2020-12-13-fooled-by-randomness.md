@@ -4,7 +4,7 @@ title: "Fooled by randomness"
 categories: [Book, Economics]
 ---
 
-As you can guess from the title, this is a book about randomness, or if you prefer its popular name, luck. [Nassim Nicholas Taleb](https://pt.wikipedia.org/wiki/Nassim_Nicholas_Taleb) and its love of [Monte Carlo generators](https://en.wikipedia.org/wiki/Monte_Carlo_method) will try to convince you that sometimes when you see competence and determinism, you may be looking at luck and randomness.
+As you can guess from the title, this is a book about randomness, or if you prefer its popular name, luck. [Nassim Nicholas Taleb](https://pt.wikipedia.org/wiki/Nassim_Nicholas_Taleb){:target="_blank"} and its love of [Monte Carlo generators](https://en.wikipedia.org/wiki/Monte_Carlo_method){:target="_blank"} will try to convince you that sometimes when you see competence and determinism, you may be looking at luck and randomness.
 
 ## Crossing the T's
 
@@ -24,7 +24,7 @@ The quality of a decision can't be judged by its outcome, but it seems like that
 
 ## Randomness can be beautiful
 
-The [exquisite corpse](https://en.wikipedia.org/wiki/Exquisite_corpse) is a method of collectively gathering words, following some simple rules. One person chooses an adjective, another person chooses an noun, and so on. That weird name is because when people played that game for the first time, the phrase **"The exquisite corpse shall drink the new wine"** came up.
+The [exquisite corpse](https://en.wikipedia.org/wiki/Exquisite_corpse){:target="_blank"} is a method of collectively gathering words, following some simple rules. One person chooses an adjective, another person chooses an noun, and so on. That weird name is because when people played that game for the first time, the phrase **"The exquisite corpse shall drink the new wine"** came up.
 
 Sometimes, literature and poetry critics see meanings that the writers themselves missed. If you randomly put together words, some interesting and magical metaphor may arise. Ultimately, if getting fooled by randomness, let it be by the most beautiful (and harmless) one.
 
@@ -40,7 +40,7 @@ When it comes to investments, in a short period of time, what is observed is the
 
 If you put one trillion monkeys on a keyboard, it's likely some of them will type something meaningful. The larger the sample, the most likely it is for you to get a successful item out of it. That's why it doesn't matter how often something is successful, if failure has an overly high price. 
 
-The car, plane, phone and internet were revolutionary to our world, but that doesn't mean everything brand new will be; we need to count all the monkeys, not just the successful ones. The monkeys that stay behind are not counted and remain invisible; we only see the winners, and that makes us have a wrong perception of the real chances. That's [survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias).
+The car, plane, phone and internet were revolutionary to our world, but that doesn't mean everything brand new will be; we need to count all the monkeys, not just the successful ones. The monkeys that stay behind are not counted and remain invisible; we only see the winners, and that makes us have a wrong perception of the real chances. That's [survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias){:target="_blank"}.
 
 That also applies to theories. A theory can never be right, even though it seems right and obvious at the time. It could be that we just didn't observe yet a scenario that falsifies that theory.
 
@@ -48,9 +48,9 @@ That also applies to theories. A theory can never be right, even though it seems
 
 It isn't natural for us to learn with history; as babies, we learn with our mistakes and only stop putting our hands in the fire when we get burn.
 
-He describes an experiment performed by [Claparède](https://pt.wikipedia.org/wiki/%C3%89douard_Clapar%C3%A8de): a pacient with a debilitating amnesia couldn't remember who he was (he had to remind her of who he was every fifteen minutes). One day, he hid a pin under his hand and pinched her when shaking her hand. On the next day, she couldn't recognize him, but retracted her hand when he tried to greet her.
+He describes an experiment performed by [Claparède](https://pt.wikipedia.org/wiki/%C3%89douard_Clapar%C3%A8de){:target="_blank"}: a pacient with a debilitating amnesia couldn't remember who he was (he had to remind her of who he was every fifteen minutes). One day, he hid a pin under his hand and pinched her when shaking her hand. On the next day, she couldn't recognize him, but retracted her hand when he tried to greet her.
 
-That introduced me to the notions of a [declarative memory](https://www.sciencedirect.com/topics/neuroscience/declarative-memory) and a [non-declarative memory](https://www.sciencedirect.com/topics/psychology/nondeclarative-memory), which I did not know anything about.
+That introduced me to the notions of a [declarative memory](https://www.sciencedirect.com/topics/neuroscience/declarative-memory){:target="_blank"} and a [non-declarative memory](https://www.sciencedirect.com/topics/psychology/nondeclarative-memory){:target="_blank"}, which I did not know anything about.
 
 ## Overall
 
@@ -61,4 +61,4 @@ There were some notes I made while reading the book that, even though I couldn't
 - Be careful when you become too leal to ideas; ideas do not deserve your loyalty. They should be falsifiable, and when determined to be false, abandon them.
 - when observing the risks, do you effectively reduce them or that just gives you a feeling of doing your job?
 
-Finally, it left me with a will to revisit [stochastic processes](https://en.wikipedia.org/wiki/Stochastic_process) and actually understand them (not just superficially know what they are about to pass a college exam); and [ergodicity](https://en.wikipedia.org/wiki/Ergodicity), which I do not remember seeing in college.
+Finally, it left me with a will to revisit [stochastic processes](https://en.wikipedia.org/wiki/Stochastic_process){:target="_blank"} and actually understand them (not just superficially know what they are about to pass a college exam); and [ergodicity](https://en.wikipedia.org/wiki/Ergodicity){:target="_blank"}, which I do not remember seeing in college.

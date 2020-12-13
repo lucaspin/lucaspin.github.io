@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thinking, Fast and Slow"
+title: "Thinking, fast and slow"
 categories: [Book, Psychology]
 ---
 

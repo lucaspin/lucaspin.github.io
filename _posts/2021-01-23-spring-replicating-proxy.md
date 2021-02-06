@@ -4,7 +4,7 @@ title: "Building an RTP receiver with Spring"
 categories: [Spring, RTP]
 ---
 
-I have been really into understanding more about how audio/video streamings work. One piece of that world is RTP. It is defined in [RFC 3550](https://tools.ietf.org/html/rfc3550), which I read but I don't actually understand things until I see them working for myself, so let's do that. This is what we are building:
+I have been really into understanding more about how audio/video streamings work. One piece of that world is RTP. It is defined in [RFC 3550](https://tools.ietf.org/html/rfc3550){:target="_blank"}, which I read but I don't actually understand things until I see them working for myself, so let's do that. This is what we are building:
 
 <image src="/public/img/rtp-receiver-flow.svg"></image>
 
@@ -12,11 +12,11 @@ I have been really into understanding more about how audio/video streamings work
 2. The RTP receiver consumes that stream, creating a websocket stream from it and sending it to the websocket server 
 3. The websocket server consumes the stream and writes it to a file
 
-The code for this experiment can be found at [https://github.com/lucaspin/spring-replication-proxy](https://github.com/lucaspin/spring-replication-proxy).
+The code for this experiment can be found at [https://github.com/lucaspin/spring-replication-proxy](https://github.com/lucaspin/spring-replication-proxy){:target="_blank"}.
 
 ## RTP header structure
 
-Here's the RTP header structure, from [the RFC](https://tools.ietf.org/html/rfc3550#page-13):
+Here's the RTP header structure, from [the RFC](https://tools.ietf.org/html/rfc3550#page-13){:target="_blank"}:
 
 ```
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -34,7 +34,7 @@ Here's the RTP header structure, from [the RFC](https://tools.ietf.org/html/rfc3
 A few things to note there:
 - `version (V)`: the first two bytes in the packet. This is always 2, at least until someone comes up with a newer version of RTP. Food for thought: as just 2 bits are used for this, would it only be possible for a version 3 to exist?
 - `contributing sources count (CC)`: works together with the `CSRC identifiers` part of the header, defining how many of those we'll have in the packet. As only 4 bits are used for this, the maximum number of CSRC identifiers we can have is 15.
-- `payload type (PT)`: the format that the media in this packet uses. This only makes sense in the context of a profile. [RFC 3551](https://tools.ietf.org/html/rfc3551) defines a good example of one. The profile defines which values map to which formats. The payload type can be static or dynamic. For a static payload type, you just need to know which profile the sender is using and you're good. For a dynamic payload type, you need the profile and something else to know the format. Usually, an [SDP description](https://tools.ietf.org/html/rfc4566) is that "something else".
+- `payload type (PT)`: the format that the media in this packet uses. This only makes sense in the context of a profile. [RFC 3551](https://tools.ietf.org/html/rfc3551){:target="_blank"} defines a good example of one. The profile defines which values map to which formats. The payload type can be static or dynamic. For a static payload type, you just need to know which profile the sender is using and you're good. For a dynamic payload type, you need the profile and something else to know the format. Usually, an [SDP description](https://tools.ietf.org/html/rfc4566){:target="_blank"} is that "something else".
 - `sequence number`: the sender puts sequence numbers on all packets before sending them, so that the receiver can recompose the media packets in the correct order. Later on, you'll be able to hear why that is important. 
 - `timestamp`: Why would you need a sequence number and a timestamp?
 - `SSRC identifier`: synchronization source; a unique id used to distinguish media streams coming from different sources.
@@ -107,7 +107,7 @@ public static RTPPacket parsePacket(byte[] packet) {
 
 ## The UDP inbound receiver
 
-As we're only interested in understanding RTP, let's let Spring take care of the UDP complexity for us. Spring [has support for TCP and UDP](https://docs.spring.io/spring-integration/docs/current/reference/html/ip.html) and here is how you create a UDP inbound receiver on port `11111` with it:
+As we're only interested in understanding RTP, let's let Spring take care of the UDP complexity for us. Spring [has support for TCP and UDP](https://docs.spring.io/spring-integration/docs/current/reference/html/ip.html){:target="_blank"} and here is how you create a UDP inbound receiver on port `11111` with it:
 
 ```java
 IntegrationFlow flow = IntegrationFlows.from(new UnicastReceivingChannelAdapter(11111))
@@ -115,7 +115,7 @@ IntegrationFlow flow = IntegrationFlows.from(new UnicastReceivingChannelAdapter(
     .get();
 ```
 
-The `RTPMessageHandler` class extends Spring's [AbstractMessageHandler](https://docs.spring.io/spring-integration/api/org/springframework/integration/handler/AbstractMessageHandler.html) and does just two things:
+The `RTPMessageHandler` class extends Spring's [AbstractMessageHandler](https://docs.spring.io/spring-integration/api/org/springframework/integration/handler/AbstractMessageHandler.html){:target="_blank"} and does just two things:
 1. Parses the RTP packet
 2. Forwards it to our `RTPManager`
 
@@ -203,7 +203,7 @@ public class RTPPacket implements Comparable<RTPPacket> {
 
 ## Bringing everything up
 
-For our WebSocket server and client, we'll use [socket.io](https://socket.io/). Our server just grabs everything that comes from the websocket and saves it into a file:
+For our WebSocket server and client, we'll use [socket.io](https://socket.io/){:target="_blank"}. Our server just grabs everything that comes from the websocket and saves it into a file:
 
 ```js
 const http = require('http').Server();
@@ -227,7 +227,7 @@ http.listen(4010, () => {
 });
 ```
 
-We'll use [ffmpeg](https://ffmpeg.org/) to generate the RTP stream that'll be consumed by our RTP receiver:
+We'll use [ffmpeg](https://ffmpeg.org/){:target="_blank"} to generate the RTP stream that'll be consumed by our RTP receiver:
 
 ```sh
 ffmpeg \

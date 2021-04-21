@@ -4,7 +4,7 @@ title: "Man's search for meaning"
 categories: [Book, History]
 ---
 
-It is always a unique experience to read about the experience of a man that survived a concentration camp. That is specially true if it is a story told in a biographical manner. Your mind swims in a pool of rage, hatred, confusion and some other emotions that you can't fully comprehend. However, this book doesn't follow the usual structure of such a story, as [Viktor Frankl](https://en.wikipedia.org/wiki/Viktor_Frankl) lets us know at the beginning of the book:
+It is always a unique experience to read about the experience of a man that survived a concentration camp. That is specially true if it is a story told in a biographical manner. Your mind swims in a pool of rage, hatred, confusion and some other emotions that you can't fully comprehend. However, this book doesn't follow the usual structure of such a story, as [Viktor Frankl](https://en.wikipedia.org/wiki/Viktor_Frankl){:target="_blank"} lets us know at the beginning of the book:
 
 > This tale is not concerned with the great horrors, which have already been described often enough (though less often believed), but with the multitude of small torments.
 
@@ -34,7 +34,7 @@ I hope I'm as worthy of my sufferings as those people were of theirs.
 
 > He who has a why to live for can bear almost any how.
 
-Here we enter the psychological part of the book, which defines the theory created by Viktor, called [logotherapy](https://en.wikipedia.org/wiki/Logotherapy). According to that, we can discover the meaning in life in three different ways:
+Here we enter the psychological part of the book, which defines the theory created by Viktor, called [logotherapy](https://en.wikipedia.org/wiki/Logotherapy){:target="_blank"}. According to that, we can discover the meaning in life in three different ways:
 1. by creating a work or doing a deed;
 2. by experiencing something or encountering someone;
 3. by the attitude we take toward unavoidable suffering.

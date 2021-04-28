@@ -55,6 +55,8 @@ He advised his patients to actually try to stay awake, which eventually led to s
 
 The main point here is not feeding the obsession and fighting it by ridiculing it (applying paradoxical intention). That way, vicious circles can be cut, making paradoxical intention a good way to fight anticipatory anxiety.
 
+Also, it's interesting how I already applied that idea in my daily life, just didn't know it had a fancy name. One of the most common advices you see around to get unstuck on a problem is to "step away from the computer". And it works. It's quite a common thing for me to have these little breakthroughs while doing the dishes, taking a shower or going for a walk.
+
 ## Final notes
 
 > Although some men lost all hope, it was the incorrigible optimists who were the most irritating companions.

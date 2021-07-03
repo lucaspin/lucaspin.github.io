@@ -4,7 +4,7 @@ title: "Fooled by randomness"
 categories: [Book, Economics]
 ---
 
-As you can guess from the title, this is a book about randomness, or if you prefer its popular name, luck. [Nassim Nicholas Taleb](https://pt.wikipedia.org/wiki/Nassim_Nicholas_Taleb){:target="_blank"} and its love of [Monte Carlo generators](https://en.wikipedia.org/wiki/Monte_Carlo_method){:target="_blank"} will try to convince you that sometimes when you see competence and determinism, you may be looking at luck and randomness.
+As you can guess from the title, this is a book about randomness, or if you prefer its popular name, luck. [Nassim Nicholas Taleb](https://pt.wikipedia.org/wiki/Nassim_Nicholas_Taleb){:target="_blank"} and his love of [Monte Carlo generators](https://en.wikipedia.org/wiki/Monte_Carlo_method){:target="_blank"} will try to convince you that sometimes when you see competence and determinism, you may be looking at randomness.
 
 ## Crossing the T's
 
@@ -20,7 +20,7 @@ The fact that all millionaires are persistent doesn't make all persistent people
 
 This is a really interesting notion: when analysing a result, we should not just consider the observed result, but all the other possible results too. That way, we shouldn't judge a performance by its results, but by the costs of the alternative results (if history had turned out differently). That way, certainty is something bound to happen in the larger number of different alternative stories, while uncertainty refers to events that occur on the smallest number of alternative stories.
 
-The quality of a decision can't be judged by its outcome, but it seems like that point of view is only expressed when people fail; when they succeed, obviously it was because of the quality of their decision.
+The quality of a decision can't be judged by its outcome, but it seems like that point of view is only expressed when people fail; when they succeed, obviously it was due to the quality of their decision.
 
 ## Randomness can be beautiful
 

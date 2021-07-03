@@ -67,7 +67,7 @@ He describes an [interesting experiment](https://mindhacks.com/2013/05/28/why-yo
 - *peak-end rule*: the global retrospective classification is the mean of the worst moment of the experience and its end.
 - *duration neglect*: the duration of an episode has no effect on its evaluation.
 
-There's an interesting inconsistency here: we want our pleasures to be sustained and our pains to be brief, but our memory evoluted to represent the most intense moment and the end of a pleasure/pain episode.
+There's an interesting inconsistency here: we want our pleasures to be sustained and our pains to be brief, but our memory evolved to represent the most intense moment and the end of a pleasure/pain episode.
 
 ## Overall
 

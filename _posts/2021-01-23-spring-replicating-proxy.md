@@ -6,7 +6,7 @@ categories: [Spring, RTP]
 
 I have been really into understanding more about how audio/video streamings work. One piece of that world is RTP. It is defined in [RFC 3550](https://tools.ietf.org/html/rfc3550){:target="_blank"}, which I read but I don't actually understand things until I see them working for myself, so let's do that. This is what we are building:
 
-<image src="/public/img/rtp-receiver-flow.svg"></image>
+<image src="/public/img/rtp-receiver-flow.png"></image>
 
 1. ffmpeg generates an RTP stream from an audio file
 2. The RTP receiver consumes that stream, creating a websocket stream from it and sending it to the websocket server 

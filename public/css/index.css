@@ -30,14 +30,6 @@ html[data-theme="theme-4"] {
   --highlight-color: #8AEA92;
 }
 
-html[data-theme="theme-5"] {
-  --background-color: #2E5077;
-  --background-content-color: #611C35;
-  --text-color: #D7E8BA;
-  --darker-text-color: #999;
-  --highlight-color: #FFA630;
-}
-
 .theme-selector-container {
   display: flex;
   justify-content: space-evenly;
@@ -233,12 +225,30 @@ img {
   border-radius: 5px;
 }
 
-.content {
+.home-box .img-container {
+  flex: 1;
+}
+
+.home-box .img-container img {
+  border-radius: 150px;
+  filter: saturate(.5);
+}
+
+.home-box .description {
+  flex: 3;
+  align-self: center;
+  padding-left: 2rem;
+}
+
+.home-box.me {
+  display: flex;
+}
+
+.home-box, .content {
   max-width: 36rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 1rem;
   padding: 1rem 2rem;
-  background-color: var(--background-content-color);
+  background-color: var(--background-content-color)
 }
 
 .spyable-content {
@@ -258,9 +268,22 @@ img {
   }
 }
 
-@media(max-width: 768px) {
-  .content {
-    padding: 0.5rem 1rem;
+@media(max-width: 680px) {
+  .home-box, .content {
+    margin: 0 auto 0;
+    padding: 1rem;
+  }
+
+  .home-box.me {
+    padding: 2rem 1rem;
+  }
+
+  .home-box.posts {
+    padding: 0 2rem 1rem;
+  }
+
+  .home-box h2 {
+    margin-top: 0;
   }
 }
 

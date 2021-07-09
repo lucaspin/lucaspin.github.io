@@ -1,23 +1,82 @@
 ---
-layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
-  {% for year in posts_by_year %}
-    <h1 class="posts-year">{{ year.name }}</h1>
-    <ul class="post-list">
-      {% for post in year.items %}
-        <li>
-          <span class="post-meta">
-            {{ post.date | date: "%b %d" }}
-          </span>
-          <a class="post-meta-title" href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </li>
+<!DOCTYPE html>
+<html lang="en-us" data-theme="theme-3">
+  {% include head.html %}
+  <body>
+    <div>
+      <div class="theme-selector-container">
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="theme-toggler">
+          <div class="theme-toggler-box" style="background-color:var(--background-content-color)"></div>
+          <div class="theme-toggler-box" style="background-color:var(--text-color)"></div>
+          <div class="theme-toggler-box" style="background-color:var(--darker-text-color)"></div>
+          <div class="theme-toggler-box" style="background-color:var(--highlight-color)"></div>
+          <div class="theme-toggler-box" style="background-color:var(--background-color)"></div>
+        </div>
+      </div>
+    </div>
+    <div class="home-box me">
+      <div class="img-container">
+        <image src="/public/img/me.jpg"></image>
+      </div>
+      <div class="description">
+        Hello, my name is Lucas Pinheiro. I am a software developer from Brazil, currently working at <a href="https://semaphoreci.com/" target="_blank">Semaphore</a>.
+        <br>
+        <br>
+        I write mostly about findings and experimentations with software and recent readings.
+      </div>
+    </div>
+    <div class="home-box posts">
+      {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      {% for year in posts_by_year %}
+        <h2 class="posts-year">{{ year.name }}</h2>
+        <ul class="post-list">
+          {% for post in year.items %}
+            <li>
+              <span class="post-meta">
+                {{ post.date | date: "%b %d" }}
+              </span>
+              <a class="post-meta-title" href="{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       {% endfor %}
-    </ul>
-  {% endfor %}
-</div>
+    </div>
+  </body>
+  <script>
+    (function() {
+      const theme = window.localStorage.getItem("theme");
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', 'theme-' + theme);
+      }
+
+      $('.theme-toggler').on('click', function() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const currentNumber = Number(currentTheme.split("-")[1]);
+        let nextTheme;
+        if (currentNumber == 4) {
+          nextTheme = 1;
+        } else {
+          nextTheme = currentNumber + 1;
+        }
+
+        window.localStorage.setItem('theme', nextTheme);
+        document.documentElement.setAttribute('data-theme', 'theme-' + nextTheme);
+      });
+    })();
+  </script>
+</html>

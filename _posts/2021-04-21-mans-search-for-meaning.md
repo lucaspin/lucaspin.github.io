@@ -47,11 +47,11 @@ The main part of it is how it focuses on the future, e.g., on the meanings to be
 
 [Paradoxical intention](https://en.wikipedia.org/wiki/Paradoxical_intention) is another good example of how humor is your friend. Grossly, paradoxical intention is making fun of yourself and doing the exact opposite of what your obession is telling you to do. A good visualization of that is what he advised his sleep disturbance patients to do. Instead of obsessively trying to fall asleep:
 
-<img src="/public/img/sleeplessness-2.png" width="400">
+<img src="/public/img/no-sleep.png" width="300">
 
 He advised his patients to actually try to stay awake, which eventually led to sleep.
 
-<img src="/public/img/sleeplessness-3.png" width="400">
+<img src="/public/img/sleep.png" width="200">
 
 The main point here is not feeding the obsession and fighting it by ridiculing it (applying paradoxical intention). That way, vicious circles can be cut, making paradoxical intention a good way to fight anticipatory anxiety.
 

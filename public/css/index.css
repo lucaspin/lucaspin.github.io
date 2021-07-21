@@ -216,6 +216,7 @@ pre {
   line-height: 1.6;
   white-space: pre;
   overflow: auto;
+  max-width: 100%;
   word-break: break-all;
   word-wrap: break-word;
 }

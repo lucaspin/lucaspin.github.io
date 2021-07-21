@@ -192,14 +192,11 @@ code, pre {
   font-size: 90%;
 }
 
-.highlight {
-  border: 1px solid var(--darker-text-color);
-}
-
 div.highlight {
   width: 80%;
   margin: 1rem auto;
-  overflow-x: scroll;
+  overflow: auto;
+  border: 1px solid var(--darker-text-color);
 }
 
 code {

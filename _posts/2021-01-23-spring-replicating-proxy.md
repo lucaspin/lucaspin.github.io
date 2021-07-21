@@ -18,7 +18,7 @@ The code for this experiment can be found at [https://github.com/lucaspin/spring
 
 Here's the RTP header structure, from [the RFC](https://tools.ietf.org/html/rfc3550#page-13){:target="_blank"}:
 
-<pre>
+```
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |V=2|P|X|  CC   |M|     PT      |       sequence number         |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -29,7 +29,7 @@ Here's the RTP header structure, from [the RFC](https://tools.ietf.org/html/rfc3
 |            contributing source (CSRC) identifiers             |
 |                             ....                              |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-</pre>
+```
 
 A few things to note there:
 - `version (V)`: the first two bytes in the packet. This is always 2, at least until someone comes up with a newer version of RTP. Food for thought: as just 2 bits are used for this, would it only be possible for a version 3 to exist?
@@ -66,16 +66,16 @@ But the first byte also has three other fields. How do we get just the version t
 
 Let's say that the first byte is `10010010`. In order to grab just the first two bits, we need to "erase" the other six bits. We can use an AND operation where the bits in the same position as the ones we want to erase are 0. Remember: ANDing anything with 0, you get 0.
 
-<pre>
+```
          10010010
      AND 11000000
      ------------
          10000000
-</pre>
+```
 
 Cool, we zeroed them out, but the bits we want are still in the leftmost position. Now, we shift them right 6 times:
 
-<pre>
+```
          10000000
          --------
     (1x) 01000000
@@ -84,7 +84,7 @@ Cool, we zeroed them out, but the bits we want are still in the leftmost positio
     (4x) 00001000
     (5x) 00000100
     (6x) 00000010
-</pre>
+```
 
 There you go. Now, we have `00000010`, which in the fantastic decimal system means 2. With that idea in mind, let's create a `parsePacket()` method to transform an array of bytes into an `RTPPacket` object:
 

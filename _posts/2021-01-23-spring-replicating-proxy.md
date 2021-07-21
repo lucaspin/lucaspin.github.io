@@ -18,7 +18,7 @@ The code for this experiment can be found at [https://github.com/lucaspin/spring
 
 Here's the RTP header structure, from [the RFC](https://tools.ietf.org/html/rfc3550#page-13){:target="_blank"}:
 
-```
+<pre>
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |V=2|P|X|  CC   |M|     PT      |       sequence number         |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -29,7 +29,7 @@ Here's the RTP header structure, from [the RFC](https://tools.ietf.org/html/rfc3
 |            contributing source (CSRC) identifiers             |
 |                             ....                              |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-```
+</pre>
 
 A few things to note there:
 - `version (V)`: the first two bytes in the packet. This is always 2, at least until someone comes up with a newer version of RTP. Food for thought: as just 2 bits are used for this, would it only be possible for a version 3 to exist?

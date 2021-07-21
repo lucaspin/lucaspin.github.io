@@ -76,7 +76,7 @@ html {
 
 @media (min-width: 38em) {
   html {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -188,8 +188,17 @@ ul, ol, dl {
 }
 
 code, pre {
-  font-family: "Fira Code", monospace;
-  font-size: 85%;
+  font-family: "Fira Mono", monospace;
+  font-size: 90%;
+}
+
+.highlight {
+  border: 1px solid var(--darker-text-color);
+}
+
+div.highlight {
+  width: 80%;
+  margin: 1rem auto;
 }
 
 code {
@@ -202,9 +211,9 @@ code {
 pre {
   display: block;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   padding: 1rem;
-  line-height: 1.4;
+  line-height: 1.6;
   white-space: pre;
   overflow: auto;
   word-break: break-all;
@@ -284,6 +293,10 @@ img {
 
   .home-box h2 {
     margin-top: 0;
+  }
+
+  div.highlight {
+    width: 100%;
   }
 }
 

@@ -197,8 +197,9 @@ code, pre {
 }
 
 div.highlight {
-  max-width: 80%;
+  width: 80%;
   margin: 1rem auto;
+  overflow-x: scroll;
 }
 
 code {
@@ -215,8 +216,6 @@ pre {
   padding: 1rem;
   line-height: 1.6;
   white-space: pre;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
   max-width: 100%;
   word-break: break-all;
   word-wrap: break-word;

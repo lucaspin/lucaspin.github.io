@@ -212,10 +212,7 @@ pre {
   margin-bottom: 0;
   padding: 1rem;
   line-height: 1.6;
-  white-space: pre;
   max-width: 100%;
-  word-break: break-all;
-  word-wrap: break-word;
 }
 
 pre code {

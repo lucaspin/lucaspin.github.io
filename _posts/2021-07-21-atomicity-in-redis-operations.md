@@ -155,7 +155,7 @@ PASS
 ok  	redis-playground	3.124s
 ```
 
-`Append()` executed has an average speed of ~4.32ms while `AppendWithScript()` executes at ~1.55ms, ~278% times faster.
+`Append()` has an average speed of ~4.32ms while `AppendWithScript()` executes at ~1.55ms, ~278% times faster.
 
 ## Pre-loading lua scripts
 

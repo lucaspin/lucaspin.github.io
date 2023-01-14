@@ -74,8 +74,8 @@ In our launchD daemon configuration (located at `/Library/LaunchDaemons`), we ca
 From launchctl's man page:
 
 ```text
-     setenv key value
-              Specify an environment variable to be set on all future processes launched by launchd in the caller's context.
+setenv key value
+    Specify an environment variable to be set on all future processes launched by launchd in the caller's context.
 ```
 
 This would require restarting our daemon.
@@ -86,21 +86,17 @@ From launchctl's man page:
 
 ```text
 config system | user parameter value
-              Sets persistent configuration information for launchd(8) domains. Only the system domain and user domains may be configured. The location
-              of the persistent storage is an implementation detail, and changes to that storage should only be made through this subcommand. A reboot
-              is required for changes made through this subcommand to take effect.
+      Sets persistent configuration information for launchd(8) domains. Only the system domain and user domains may be configured. The location of the persistent storage is an implementation detail, and changes to that storage should only be made through this subcommand. A reboot is required for changes made through this subcommand to take effect.
 
-              Supported configuration parameters are:
+      Supported configuration parameters are:
 
-              umask    Sets the umask(2) for services within the target domain to the value specified by value.  Note that this value is parsed by
-                       strtoul(3) as an octal-encoded number, so there is no need to prefix it with a leading '0'.
+      umask    Sets the umask(2) for services within the target domain to the value specified by value. Note that this value is parsed by
+               strtoul(3) as an octal-encoded number, so there is no need to prefix it with a leading '0'.
 
-              path     Sets the PATH environment variable for all services within the target domain to the string value.  The string value should
-                       conform to the format outlined for the PATH environment variable in environ(7).  Note that if a service specifies its own PATH,
-                       the service-specific environment variable will take precedence.
-
-                       NOTE: This facility cannot be used to set general environment variables for all services within the domain. It is intentionally
-                       scoped to the PATH environment variable and nothing else for security reasons.
+      path     Sets the PATH environment variable for all services within the target domain to the string value. The string value should
+               conform to the format outlined for the PATH environment variable in environ(7). Note that if a service specifies its own PATH,
+               the service-specific environment variable will take precedence.
+               NOTE: This facility cannot be used to set general environment variables for all services within the domain. It is intentionally scoped to the PATH environment variable and nothing else for security reasons.
 ```
 
 This would require a reboot, though.

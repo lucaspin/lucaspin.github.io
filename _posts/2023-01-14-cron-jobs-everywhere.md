@@ -4,7 +4,7 @@ title: "Cron jobs, everywhere"
 categories: [linux, macOS, powershell]
 ---
 
-I have used [Kubernetes CronJobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) for multiple purposes. I have used [AWS EventBridge](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudwatchevents-expressions.html) to schedule Lambda functions based on a schedule. I wrote several distinct [Spring schedulers](https://spring.io/guides/gs/scheduling-tasks) for various applications. And yet, I had never faced the need to use the father of them all: the UNIX cron job.
+I have used [Kubernetes CronJobs](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/){:target="_blank"} for multiple purposes. I have used [AWS EventBridge](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudwatchevents-expressions.html){:target="_blank"} to schedule Lambda functions based on a schedule. I wrote several distinct [Spring schedulers](https://spring.io/guides/gs/scheduling-tasks){:target="_blank"} for various applications. And yet, I had never faced the need to use the father of them all: the UNIX cron job.
 
 Well, there is a first time for everything. And just like Atahualpa and the Inca people before me, I had to create an actual cron job. Here are my notes on how to do it, on several different operating systems.
 
@@ -59,17 +59,17 @@ Also, if you want to ensure nothing goes to the mailbox, use `MAILTO=""` in your
 
 ## MacOS
 
-Cron is also available in macOS. There is a launchd daemon located at `/System/Library/LaunchDaemons/com.vix.cron.plist` which manages the cron daemon. Initially, I was confused by the daemon's name (`com.vix.cron`). But apparently, the version of cron we use today is known as the [Vixie cron](https://en.wikipedia.org/wiki/Cron#Modern_versions), so that name makes sense, I guess.
+Cron is also available in macOS. There is a launchd daemon located at `/System/Library/LaunchDaemons/com.vix.cron.plist` which manages the cron daemon. Initially, I was confused by the daemon's name (`com.vix.cron`). But apparently, the version of cron we use today is known as the [Vixie cron](https://en.wikipedia.org/wiki/Cron#Modern_versions){:target="_blank"}, so that name makes sense, I guess.
 
 Just put some cron job lines into a `/etc/crontab` file, and that launchd daemon will make sure your cron jobs run. You can't use the `cron.d` directory, though. You can also use the `crontab` CLI to manage the user's crontabs; those are located at `/usr/lib/cron/tabs/{USER}`.
 
 ## Windows
 
 Windows don't have cron. But Windows does offer support for scheduled tasks. If using PowerShell, you can use the following cmdlets to create scheduled tasks:
-  - [New-ScheduledTask](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtask)
-  - [New-ScheduledTaskTrigger](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtasktrigger)
-  - [New-ScheduledTaskAction](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtaskaction)
-  - [Register-ScheduledTask](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/register-scheduledtask?view=windowsserver2022-ps)
+  - [New-ScheduledTask](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtask){:target="_blank"}
+  - [New-ScheduledTaskTrigger](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtasktrigger){:target="_blank"}
+  - [New-ScheduledTaskAction](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtaskaction){:target="_blank"}
+  - [Register-ScheduledTask](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/register-scheduledtask?view=windowsserver2022-ps){:target="_blank"}
 
 Here's an example:
 
@@ -97,8 +97,8 @@ Register-ScheduledTask `
   -Password $Password
 ```
 
-Alternatively, the [schtasks](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks) command can be used.
+Alternatively, the [schtasks](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks){:target="_blank"} command can be used.
 
 ## Wrapping up
 
-I had to figure out how to run these scheduled tasks on different types of machines to implement a custom health check for EC2 instances. My cron job was supposed to run every minute to guarantee that a specific binary was running on the EC2 instance and mark the instance as unhealthy if not. [This pull request](https://github.com/renderedtext/agent-aws-stack/pull/108) has the final solution.
+I had to figure out how to run these scheduled tasks on different types of machines to implement a custom health check for EC2 instances. My cron job was supposed to run every minute to guarantee that a specific binary was running on the EC2 instance and mark the instance as unhealthy if not. [This pull request](https://github.com/renderedtext/agent-aws-stack/pull/108){:target="_blank"} has the final solution.

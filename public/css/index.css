@@ -69,7 +69,7 @@ html, body {
 }
 
 html {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: "Fira Mono", monospace;
   font-size: 18px;
   line-height: 1.6;
 }
